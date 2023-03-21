@@ -1,0 +1,56 @@
+
+
+
+
+
+//SECCION NOSOTROS
+
+
+
+.index-nosotros{
+    background: url(https://fondosmil.com/fondo/37827.jpg) no-repeat center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 40vh;
+       
+
+}
+
+.titulo-nosotros{
+    text-align: center;
+    
+    
+   
+
+}
+.btn-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 85%;
+    
+}
+
+
+//ANIMACIONES
+
+.efecto-1{
+    transition: 1s;
+}
+
+.efecto-1:hover {
+    transform: translateY(-3px) scale(1.1);
+    
+
+}
+
+.card{
+    transition: 1s;
+}
+
+.card:hover{
+    transform: translateY(-3px) scale(1.1)
+
+}
+
+    

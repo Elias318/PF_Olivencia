@@ -1,0 +1,13 @@
+
+    @import "../../Utilidades/mixins";
+  
+  
+      .header{
+        @include header;
+        height: 45vh !important;
+        background:url(../../../images/banner-web--mascota.webp) no-repeat center;
+        background-size: cover;
+        width: 100%;
+      }
+      
+

@@ -1,0 +1,15 @@
+@mixin contenedor-servicios{
+    display: flex;
+    align-items: center;
+    div{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@mixin header{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom:30px ;
+}

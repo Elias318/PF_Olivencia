@@ -1,0 +1,361 @@
+@import "../Utilidades/variables";
+@import "../Utilidades/mixins";
+
+.sombra{
+    text-shadow: 4px 4px 5px ;
+
+}
+
+// MOBILE 
+
+@media only screen and (max-width:767px){
+
+    // PAGINA INDEX
+    .contenedor-redes-nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contenedor-servicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+    .contenedor-seccion-doc{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .marcas-contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .marca-purina{
+        height: 250px;
+        padding: 0;
+        margin-inline: 50px;
+        display: flex;
+        justify-content: center;
+        
+        img{
+            width: 100%;
+        }
+    }
+
+    .marca-pedigree{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    // PAGINA NOSOTROS
+    .contenedor-img-nos{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .img-nos{
+        width: 100%;
+    }
+
+    // PAGINA CONTACTO
+
+    .contenedor-datos-form{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .contenedor-datos{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .border-datos{
+        width: 100vw;
+    }
+    
+    // SECCION FOOTER
+
+    .form-footer{
+        width: 100%;
+        padding: 20px;
+
+    }
+    .redes-footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    
+    
+
+}
+
+// TABLET
+
+@media only screen and (min-width:768px) and (max-width:1199px){
+    body{
+        font-size: 25px;
+    }
+
+    // SECCION NAV 
+
+    .contenedor-redes-nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    // PAGINA INDEX
+
+    .contenedor-servicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+    .contenedor-seccion-doc{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .marcas-contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .marca-purina{
+        height: 250px;
+        padding: 0;
+        margin-inline: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .marca-pedigree{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    // PAGINA SERVICIOS
+
+    .contenedor-servicios-serv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30px;
+        margin-bottom: 70px;
+        .contenedor-img-detalles{
+            display: flex;
+            margin-top: 60px;
+    
+        }
+    
+        
+    
+        .detalle-servicios{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            p{
+                width: 80vw;
+            }
+           
+        }
+    }
+    .contenedor-img-detalles{
+       img{
+        height: 15vh;
+        width: 15vw;
+       }
+    }
+
+    // SECCION NOSOTROS
+    .img-nosotros{
+        width: 100%;
+    }
+    .contenedor-qs {
+        width: 100%;
+    }
+
+    // SECCION CONTACTO
+    .contenedor-datos-form{
+        display: flex;
+        justify-content: center;
+    }
+
+    // PAGINA NOSOTROS
+
+    .contenedor-datos-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .contenedor-datos{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .border-datos{
+        width: 40 vw;
+    }
+
+    .contenedor-qs-img{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+        
+
+    }
+
+     
+     .contenedor-img-nos{
+        display: flex;
+        justify-content: center;
+
+      
+        
+    }
+    .img-nos{
+        width: 600;
+    }
+
+
+
+
+    // SECCION FOOTER
+
+    .form-footer{
+        width: 50%;
+        margin-left: 10px;
+
+    }
+
+    .contenedor-form-redes{
+        
+        display: flex;
+        
+    }
+
+    .redes-footer{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+}
+
+// DESKTOP
+
+@media only screen and (min-width:1200px){
+    body{
+        font-size: 25px;
+    }
+
+    // SECCION INDEX
+    
+    .contenedor-servicios{
+        @include contenedor-servicios;
+        justify-content: space-around;
+        
+    }
+    .contenedor-logo-datos{
+        height: 50vh;
+    }
+    .contenedor-seccion-doc{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .marcas-contenedor{
+        display: flex;
+        justify-content:space-around ;
+        align-items: center;
+    }
+
+
+    // PAGINA NOSOTROS
+
+    .contenedor-datos{
+        width: 50%;
+    }
+    .border-datos{
+        width: 35vw;
+    }
+    .contenedor-datos-form{
+        padding-top: 30px;
+        display: flex;
+        margin-bottom: 80px;
+    }
+    .contenedor-qs-img{
+        display: flex;
+        padding-bottom: 100px;
+
+    }
+
+    .contenedor-img-nos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+     
+    .img-nos{
+        width: 600;
+    }
+    // SECCION FOOTER
+
+
+    .form-footer{
+        width: 50%;
+        margin-left: 10px;
+
+    }
+
+    .contenedor-form-redes{
+        
+        display: flex;
+        
+    }
+
+    .redes-footer{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    
+    
+
+}
